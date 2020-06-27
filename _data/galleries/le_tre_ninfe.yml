@@ -1,0 +1,56 @@
+picture_path: illustrations/le_tre_ninfe   
+
+#serve per avere una Preview
+preview: 
+  filename: Ninfa-della-Terra-0113-1400x900.png
+  original: Ninfa-della-Terra-0113-1400x900.png
+  sizes:
+  - Ninfa-della-Terra-0113-1400x900.png
+  thumbnail: Ninfa-della-Terra-thumbnail.png
+
+#inserire le immagini della galleria
+pictures:
+- filename: Ninfa-della-Terra-0113-1400x900.png
+  original: Ninfa-della-Terra-0113-1400x900.png
+  sizes:
+  - Ninfa-della-Terra-0113-1400x900.png
+  thumbnail: Ninfa-della-Terra-thumbnail.png
+  title: Ninfa della Terra
+  caption:
+
+- filename: Ninfa-del-Mare-0114-1400x900.png
+  original: Ninfa-del-Mare-0114-1400x900.png
+  sizes:
+  - Ninfa-del-Mare-0114-1400x900.png
+  thumbnail: Ninfa-del-Mare-thumbnail.png
+  title: NInfa del Mare
+  caption:
+
+- filename: Ninfe-dell'Etna-0115-1400x900.png
+  original: Ninfe-dell'Etna-0115-1400x900.png
+  sizes:
+  - Ninfe-dell'Etna-0115-1400x900.png
+  thumbnail: Ninfe-dell'Etna-thumbnail.png
+  title: Ninfa dell'Etna
+  caption:
+
+- filename: Schema-Interattivo-0116-3508x2481.png
+  original: Schema-Interattivo-0116-3508x2481.png
+  sizes:
+  - Schema-Interattivo-0116-3508x2481.png
+  thumbnail: Schema-Interattivo-thumbnail.png
+  title: Schema installazione
+  caption: Interattiva
+
+- filename: Schema-Passivo-0117-3508x2481.png
+  original: Schema-Passivo-0117-3508x2481.png
+  sizes:
+  - Schema-Passivo-0117-3508x2481.png
+  thumbnail: Schema-Passivo-thumbnail.png
+  title: Schema installazione
+  caption: Passivo
+  
+
+
+
+ 

@@ -1,0 +1,45 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+
+  <title>Andrea Lucifero</title>
+  <link rel="icon" href="/assets/LogoAndrea.svg"/>
+
+  <meta name="generator" content="Jekyll v4.1.0" />
+  <meta property="og:title" content="Andrea Lucifero" />
+  <meta property="og:locale" content="it_IT" />
+  <meta name="description" content="Web Site" />
+  <meta property="og:description" content="Web Site" />
+
+  <link rel="canonical" href="http://localhost:4000/" />
+  <meta property="og:url" content="http://localhost:4000/" />
+
+  <meta property="og:site_name" content="Andrea Lucifero" />
+
+  <script type="application/ld+json">
+{"@type":"WebSite","headline":"Andrea Lucifero","url":"http://localhost:4000/","name":"Andrea Lucifero","WebSite"}</script>
+  <!-- End Jekyll SEO tag -->
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/{{ "assets/main.css" }}">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Andrea Lucifero" />
+
+  {% include slider_styles.html %}
+
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/{{ "assets/box.css" }}" />
+
+  <!-- script per le gallerie-->
+  {% if page.support contains 'jquery' %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  {% endif %}
+
+  {% if page.support contains 'gallery' %}
+  
+  <!-- Actual includes needed for the gallery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery-all.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.0/isotope.pkgd.min.js"></script>
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/{{ "assets/gallery.css" }}" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>
+  {% endif %}
+</head>

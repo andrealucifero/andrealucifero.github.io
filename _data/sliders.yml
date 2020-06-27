@@ -1,0 +1,29 @@
+- selector: example_slider
+  captions: true
+  images:
+    - src: /assets/img/CELL.jpg
+      alt: Cell
+      href: /pages/video.html
+    - src: /assets/img/DistanzeSonore.jpg
+      alt: Distanze Sonore
+      href: /pages/installations.html
+    - src: /assets/img/WTF.jpg
+      alt: WTF!
+      href: /pages/video.html
+    - src: /assets/img/ninfa_terra.jpg
+      alt: Le Tre Ninfe
+      href: /pages/illustrations.html
+    - src: /assets/img/corpo.jpg
+      alt: Drawing Matter and sound
+      href: /pages/illustrations.html
+    - src: /assets/img/wave.png
+      alt: Experimental Sound
+      href: /pages/experimentalmusic.html
+    - src: /assets/img/SearchLook.png
+      alt: Search Look
+      href: /pages/installations.html
+  settings:
+    height: "'auto'"
+    effect: "'fade'"
+    maxHeight: "'300'"
+    

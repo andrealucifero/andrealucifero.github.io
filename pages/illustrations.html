@@ -1,0 +1,60 @@
+---
+layout: default
+title: Illustrations
+support: [jquery, gallery,]
+---
+
+<main class="page-content" aria-label="Content">
+  <div class="wrapper">
+
+
+    <header class="post-header">
+      <h3 class="post-title">Illustrations</h3>
+    </header>
+
+    <div class="post-content">
+
+      <h2>Le tre Ninfe</h2>
+      <p>Il Tema in questione narra di una antica leggenda siciliana quella delle “Tre ninfe” che diedero vita ai
+        tre promontori Siciliani.<br>
+        Nella mitologia classica le ninfe sono delle semi-divinità legate alla natura che la rendono fertile grazie
+        i loro doni.</p>
+      <p>Dopo la prima ricerca avvenuta con Drawing Matter and sound si è voluto approfondire nuovamente la tematica
+        di ricercare il suono attraverso il segno.<br>
+        Il progetto parte dagli studi di Vassily Kandinsky con “Lo spirituale nell’arte” e “Punto, linea,
+        superficie” applicato alle teorie di Schönberg “elementi di composizione musicale”. </p>
+
+      <!-- galleria le Tre Ninfe -->
+      <div oncontextmenu="return false;">
+     {% include gallery-layout.html gallery=site.data.galleries.le_tre_ninfe id_number=1 %}
+     </div>
+
+    </div>
+
+    <div class="post-content">
+      <h2>Drawing Matter and sound</h2>
+      <p>Il progetto prende spunto dagli studi del medico, naturalista svizzero Hans Jenny(1904-1972), che tenta di
+        dimostrare l’effetto morfogenetico delle onde sonore tramite la cimatica, tale termine deriva dal greco
+        kymatika che significa “studio riguardante le onde”. In natura qualsiasi oggetto possiede la sua specifica
+        frequenza di risonanza, ciò significa che ogni materiale possiede un proprio suono accordato alla frequenza
+        naturale di 432 Hz.<br>
+        Le tre qualità che caratterizzano il suono sono: altezza, intensità e timbro, il miglior modo per poterlo
+        rappresentare graficamente è per mezzo di uno spettrogramma, o attraverso la linea che genera la forma
+        d’onda. </p>
+
+      <!-- galleria drawing matter and sound-->
+      <div oncontextmenu="return false;">
+      {% include gallery-layout.html gallery=site.data.galleries.drawing_matter_and_sound id_number=2 %}
+     </div>
+    
+    </div>
+
+    <p>
+    <div class="page-link"><a href="/pages/experimentalmusic.html">Suoni generati</a>
+    </div>
+    </p>
+
+
+
+  </div>
+</main>

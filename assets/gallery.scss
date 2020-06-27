@@ -1,0 +1,59 @@
+---
+---
+
+$default-width: 30%;
+/*
+* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+   box-sizing: content-box;
+} */
+
+.column,
+.gallery-sizer {
+  display: flex;
+  padding: 0 4px;
+  width: $default-width;
+}
+
+.image-gallery {
+
+    .column {
+    flex: auto;
+    max-width: 35%;
+    padding:0 4px;
+  
+    // hack required if no padding
+    .image {
+      margin-bottom: 6%;
+      vertical-align: middle;
+      width: 100%;
+      width: calc( 100% + 1px );
+           
+    }
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  } 
+
+} 
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+// info galleria
+.caption {
+  position: static;
+  color: #AAA;
+}
+
+

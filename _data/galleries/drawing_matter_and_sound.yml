@@ -1,0 +1,91 @@
+picture_path: illustrations/drawing_matter_and_sound
+
+#serve per avere una Preview
+preview: 
+  filename: eye-0113-2078x2986.png
+  original: eye-0113-2078x2986.png
+  sizes:
+  - eye-0113-2078x2986.png
+  thumbnail: eye-0113-thumbnail.png
+
+#inserire le immagini della galleria
+pictures:
+- filename: eye-0113-2078x2986.png
+  original: eye-0113-2078x2986.png
+  sizes:
+  - eye-0113-2078x2986.png
+  thumbnail: eye-0113-thumbnail.png
+  title: Eye
+  caption:
+
+- filename: eye-gallery-0114-1400x900.png
+  original: eye-gallery-0114-1400x900.png
+  sizes:
+  - eye-gallery-0114-1400x900.png
+  thumbnail: eye-gallery-0114-thumbnail.png
+  title: Eye
+  caption: Sviluppo
+
+- filename: femaleback-0115-2481x2998.png
+  orignal:  femaleback-0115-2481x2998.png
+  sizes:
+  - femaleback-0115-2481x2998.png
+  thumbnail: femaleback-0115-thumbnail.png
+  title: Female Back
+  caption:
+
+- filename: femaleback-gallery-0116-1400x990.png
+  original: femaleback-gallery-0116-1400x990.png
+  sizes:
+  - femaleback-gallery-0116-1400x990.png
+  thumbnail: femaleback-gallery-0116-thumbnail.png
+  title: Female Back
+  caption: Sviluppo
+
+- filename: flamingo-0117-2480x3685.png
+  original: flamingo-0117-2480x3685.png
+  sizes:
+  - flamingo-0117-2480x3685.png
+  thumbnail: flamingo-0117-thumbnail.png
+  title: Flamingo
+  caption:
+
+- filename: flamingo-gallery-0118-1400x988.png
+  original: flamingo-gallery-0118-1400x988.png
+  sizes:
+  - flamingo-gallery-0118-1400x988.png
+  thumbnail: flamingo-0118-gallery-thumbnail.png
+  title: Flamingo
+  caption: Sviluppo
+
+- filename: nakedbody-0119-4173x2417.png
+  original: nakedbody-0119-4173x2417.png
+  sizes:
+  - nakedbody-0119-4173x2417.png
+  thumbnail: nakedbody-0119-thumbnail.png
+  title: Naked Body
+  caption:
+
+- filename: nakedbody-gallery-0120-1400x988.png
+  original: nakedbody-gallery-0120-1400x988.png
+  sizes:
+  - nakedbody-gallery-0120-1400x988.png
+  thumbnail: nakedbody-gallery-0120-thumbnail.png
+  title: Naked Body
+  caption: Sviluppo
+
+- filename: tailchamaleon-0121-2366x3485.png
+  original: tailchamaleon-0121-2366x3485.png
+  sizes:
+  - tailchamaleon-0121-2366x3485.png
+  thumbnail: tailchamaleon-0121-thumbnail.png
+  title: Tail Chamaleon
+  caption:
+    
+- filename: tailchamaleon-gallery-0122-1400x988.png
+  original: tailchamaleon-gallery-0122-1400x988.png
+  sizes:
+  - tailchamaleon-gallery-0122-1400x988.png
+  thumbnail: tailchamaleon-gallery-0122-thumbnail.png
+  title: Tail Chamaleon
+  caption: Sviluppo   
