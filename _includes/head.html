@@ -12,16 +12,16 @@
   <meta name="description" content="Web Site" />
   <meta property="og:description" content="Web Site" />
 
-  <link rel="canonical" href="http://localhost:4000/" />
-  <meta property="og:url" content="http://localhost:4000/" />
+  <link rel="canonical" href="https://andrealucifero.github.io/" />
+  <meta property="og:url" content="https://andrealucifero.github.io/" />
 
   <meta property="og:site_name" content="Andrea Lucifero" />
 
   <script type="application/ld+json">
-{"@type":"WebSite","headline":"Andrea Lucifero","url":"http://localhost:4000/","name":"Andrea Lucifero","WebSite"}</script>
+{"@type":"WebSite","headline":"Andrea Lucifero","url":"https://andrealucifero.github.io/","name":"Andrea Lucifero","WebSite"}</script>
   <!-- End Jekyll SEO tag -->
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/{{ "assets/main.css" }}">
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Andrea Lucifero" />
+  <link type="application/atom+xml" rel="alternate" href="https://andrealucifero.github.io/feed.xml" title="Andrea Lucifero" />
 
   {% include slider_styles.html %}
 
@@ -41,5 +41,9 @@
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/{{ "assets/gallery.css" }}" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>
+  {% endif %}
+   
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include analytics.html %}
   {% endif %}
 </head>
