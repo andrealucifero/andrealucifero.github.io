@@ -1,6 +1,9 @@
 - selector: example_slider
   captions: true
   images:
+    - src: /assets/img/ninfa_terra.jpg
+      alt: Le Tre Ninfe
+      href: /pages/illustrations.html
     - src: /assets/img/CELL.jpg
       alt: Cell
       href: /pages/video.html
@@ -10,9 +13,6 @@
     - src: /assets/img/WTF.jpg
       alt: WTF!
       href: /pages/video.html
-    - src: /assets/img/ninfa_terra.jpg
-      alt: Le Tre Ninfe
-      href: /pages/illustrations.html
     - src: /assets/img/corpo.jpg
       alt: Drawing Matter and sound
       href: /pages/illustrations.html
