@@ -21,9 +21,9 @@
 title: Andrea Lucifero
 email: andrea.lucifero@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Web Site
+  Personal website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://andrealucifero.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://andrealucifero.it" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: Andrea Lucifero
 youtube_username:  Andrea Lucifero
 soundcloud_username: Andrea Lucifero
