@@ -6,7 +6,7 @@ categories: tutorial
 tags: windows gnu/linux wsl
 ---
 <div class="contenuto-centrato">
-<img src="/assets/tutorial/tutorial1/top.svg" alt="Microsoft e GNU/Linux" class="img-centrata" oncontextmenu="return false;" /> </div>
+<img src="/assets/tutorial/tutorial1/top.png" alt="Microsoft e GNU/Linux" class="img-centrata" oncontextmenu="return false;" /> </div>
 
 Benvenuti in questo primo tutorial in cui vi mostrerò come poter usare GNU/Linux in windows in maniera nativa.
 
