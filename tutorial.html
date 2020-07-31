@@ -1,0 +1,33 @@
+---
+layout: hometutorial
+title: Tutorial
+---
+
+{% for post in site.posts %}
+
+<p>
+
+  <div class="border-post">
+
+ <div class="post-list-heading">    
+    <a href="{{ post.url }}"> {{ post.title }} </a>
+   
+ </div>
+
+ <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+
+ {% assign foundImage = 0 %}
+        {% assign images = post.content | split:"<img " %}
+        {% for image in images %}
+          {% if image contains 'src' %}
+  
+              {% if foundImage == 0 %}
+                  {% assign html = image | split:"/>" | first %}
+                  <img {{ html }} />
+                  {% assign foundImage = 1 %}
+              {% endif %}
+          {% endif %}
+        {% endfor %}
+    </div>
+</p>
+{% endfor %}

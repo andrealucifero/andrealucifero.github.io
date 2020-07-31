@@ -1,0 +1,47 @@
+
+.alert {    
+    padding: 20px;
+    background-color: #d9f3f3;
+    color: #134242;
+    float:left;             
+   
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: #134242;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+  .image-alert {
+
+    padding-top: 15px;
+        
+  }
+
+  .alert-colon { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); }
+
+
+  @media screen and (max-width: 600px) {
+    .alert {       
+     width: 90%; 
+     margin: unset; 
+     margin-bottom: 20px; 
+           
+    }
+
+    .alert-colon {
+      width: unset;
+    }
+}
