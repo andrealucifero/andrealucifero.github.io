@@ -1,8 +1,14 @@
 ---
 layout: post
 title:  "Usare GNU/Linux in Windows"
+<<<<<<< HEAD
 date:   2020-07-28 08:00:00 +0200
 categories: tutorial
+=======
+date:   2020-07-31 08:00:00 +0200
+categories: tutorial
+tags: windows gnu/linux wsl
+>>>>>>> 1a4aacce397457025840c35794389931fd15f77f
 ---
 <div class="contenuto-centrato">
 <img src="/assets/tutorial/tutorial1/top.png" alt="Microsoft e GNU/Linux" class="img-centrata" oncontextmenu="return false;" /> </div>
@@ -11,7 +17,11 @@ Benvenuti in questo primo tutorial in cui vi mostrerò come poter usare GNU/Linu
 
 Qualche anno fa ho voluto immergermi nel mondo di GNU/Linux ma non possedendo un secondo pc da dedicare e volendomi "sporcarmi le mani" ero alla ricerca di un qualcosa che mi permettesse di usare e studiare la riga di comando senza intaccare o "sporcare" Windows, non solo, il mio fidato Toshiba non ama particolarmente il dual boot e non mi andava nemmeno di configurare VirtualBox o simili.
 
+<<<<<<< HEAD
 Così spulciando in rete nei vari blog ho scoperto il windows subsystem for linux (WSL), oggi arrivato alla seconda versione denominata WSL 2, diversamente dalla prima versione con cui ho iniziato integra un vero e proprio kernel linux sviluppato ad hoc da Microsoft stessa e reso disponibile per la comunità al seguente repository di github [WSL2-Linux-Kernel].
+=======
+Così spulciando in rete nei vari blog ho scoperto il windows subsystem for linux (WSL) oggi arrivato alla seconda versione denominata WSL 2, diversamente dalla prima versione con cui ho iniziato integra un vero e proprio kernel linux sviluppato ad hoc da Microsoft stessa e reso disponibile per la comunità al seguente repository di github [WSL2-Linux-Kernel].
+>>>>>>> 1a4aacce397457025840c35794389931fd15f77f
 
 <h1>CONFIGURAZIONE E INSTALLAZIONE DEL SOTTOSITEMA LINUX PER WINDOWS</h1>
 
@@ -53,7 +63,10 @@ Adesso riavviate il pc e impostiamo WSL 2 come versione predefinita.
 
 <h1>INSTALLAZIONE DEL KERNEL LINUX PER WSL 2</h1>
 
+<<<<<<< HEAD
 Per impostazione predefinita quando si installerà una distribuzione Linux windows adopererà il WSL 1.
+=======
+>>>>>>> 1a4aacce397457025840c35794389931fd15f77f
 Prima di rendere funzionante WSL 2 bisogna installare un componente aggiuntivo, per farlo Microsoft ci viene in aiuto poiché occorre semplicemente installare il seguente pacchetto [wsl_update_x64.msi], prima di procedere con l'installazione consiglio di dare una breve lettura al supporto Microsoft dedicato [wsl2kernel].
 
 Finalmente siamo pronti per installare le nostre distribuzioni Linux preferite.
@@ -98,7 +111,11 @@ sudo apt update && sudo apt full-upgrade -y
 Nei riferimenti trovate i link per conoscere i comandi base della shell GNU/Linux.
 È possibile anche configurare un'ambiente di sviluppo grafico ma per iniziare consiglio di cimentarvi con i comandi da terminale, successivamente vi mostrerò come configurare un desktop environment (DE).
 
+<<<<<<< HEAD
 Nel prossimo tutorial vi parlerò di [Windows Terminal] e di come personalizzarlo per rendere più piacevole e più produttivo l'uso del terminale. Come molti prodotti Microsoft è stato messo a disposizione per la comunità del software libero al seguente repository [github Terminal].
+=======
+Nel prossimo tutorial vi parlerò di [Windows Terminal] e di come personalizzarlo per rendere più piacevole e più produttivo l'uso del terminale, come per molti prodotti Microsoft è stato messo a disposizione per la comunità del software libero al seguente repository [github Terminal].
+>>>>>>> 1a4aacce397457025840c35794389931fd15f77f
 
 Se avete domande o suggerimenti scrivetemi pure!
 
@@ -116,7 +133,11 @@ Riferimenti:
 
 [Comandi base shell GNU/Linux]: https://wiki.ubuntu-it.org/AmministrazioneSistema/ComandiBase
 
+<<<<<<< HEAD
 [Windows Terminal]: /tutorial/2020/11/28/Windows-Terminal.html
+=======
+[Windows Terminal]: https://www.microsoft.com/store/productId/9N0DX20HK701
+>>>>>>> 1a4aacce397457025840c35794389931fd15f77f
 
 [github Terminal]: https://github.com/microsoft/terminal
 
