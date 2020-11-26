@@ -111,11 +111,7 @@ sudo apt update && sudo apt full-upgrade -y
 Nei riferimenti trovate i link per conoscere i comandi base della shell GNU/Linux.
 È possibile anche configurare un'ambiente di sviluppo grafico ma per iniziare consiglio di cimentarvi con i comandi da terminale, successivamente vi mostrerò come configurare un desktop environment (DE).
 
-<<<<<<< HEAD
 Nel prossimo tutorial vi parlerò di [Windows Terminal] e di come personalizzarlo per rendere più piacevole e più produttivo l'uso del terminale. Come molti prodotti Microsoft è stato messo a disposizione per la comunità del software libero al seguente repository [github Terminal].
-=======
-Nel prossimo tutorial vi parlerò di [Windows Terminal] e di come personalizzarlo per rendere più piacevole e più produttivo l'uso del terminale, come per molti prodotti Microsoft è stato messo a disposizione per la comunità del software libero al seguente repository [github Terminal].
->>>>>>> 1a4aacce397457025840c35794389931fd15f77f
 
 Se avete domande o suggerimenti scrivetemi pure!
 
@@ -133,11 +129,7 @@ Riferimenti:
 
 [Comandi base shell GNU/Linux]: https://wiki.ubuntu-it.org/AmministrazioneSistema/ComandiBase
 
-<<<<<<< HEAD
 [Windows Terminal]: /tutorial/2020/11/28/Windows-Terminal.html
-=======
-[Windows Terminal]: https://www.microsoft.com/store/productId/9N0DX20HK701
->>>>>>> 1a4aacce397457025840c35794389931fd15f77f
 
 [github Terminal]: https://github.com/microsoft/terminal
 
