@@ -1,0 +1,130 @@
+---
+layout: post
+title:  "Usare GNU/Linux in Windows"
+date:   2020-07-28 08:00:00 +0200
+categories: tutorial
+---
+<div class="contenuto-centrato">
+<img src="/assets/tutorial/tutorial1/top.png" alt="Microsoft e GNU/Linux" class="img-centrata" oncontextmenu="return false;" /> </div>
+
+Benvenuti in questo primo tutorial in cui vi mostrerò come poter usare GNU/Linux in windows in maniera nativa.
+
+Qualche anno fa ho voluto immergermi nel mondo di GNU/Linux ma non possedendo un secondo pc da dedicare e volendomi "sporcarmi le mani" ero alla ricerca di un qualcosa che mi permettesse di usare e studiare la riga di comando senza intaccare o "sporcare" Windows, non solo, il mio fidato Toshiba non ama particolarmente il dual boot e non mi andava nemmeno di configurare VirtualBox o simili.
+
+Così spulciando in rete nei vari blog ho scoperto il windows subsystem for linux (WSL), oggi arrivato alla seconda versione denominata WSL 2, diversamente dalla prima versione con cui ho iniziato integra un vero e proprio kernel linux sviluppato ad hoc da Microsoft stessa e reso disponibile per la comunità al seguente repository di github [WSL2-Linux-Kernel].
+
+<h1>CONFIGURAZIONE E INSTALLAZIONE DEL SOTTOSITEMA LINUX PER WINDOWS</h1>
+
+Il primo passo da compiere prima di installare una distribuzione GNU/Linux è abilitare il sottosistema Linux, per farlo ci sono due alternative:
+
+<li>La prima con interfaccia grafica, andando nel menù delle funzionalità di windows tramite il pannello di controllo. Nel menù di ricerca scrivere "attiva o disattiva funzionalità di windows" e abilitare la voce "Sottosistema windows per Linux".</li>
+
+<img src="/assets/tutorial/tutorial1/abilitarewsl.png" alt="attiva o disattiva funzionalità di windows" class="img-post"/>
+
+<li> La seconda tramite PowerShell eseguendolo come amministratore e lanciando il seguente comando:
+
+{% highlight microsoftshell %}
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+{% endhighlight %}
+</li>
+
+A questo punto occorre riavviare il pc ma si avrà abilitato solo il WSL 1, se non si hanno particolari esigenze consiglio di aggiornare direttamente a WSL 2.
+
+<h1>DA WSL 1 A WSL 2</h1>
+Per poter effettuare l'aggiornamento al WSl 2 bisogna avere Windows 10 aggiornato almeno alla versione 2004 (build 19041 o successive).
+
+<img src="/assets/tutorial/tutorial1/infowindows10.png" alt="info Windows 10" class="img-post"/>
+
+Per verificare la versione di Windows scrivere nel menù di ricerca "informazione sul PC", se avente PowerShell aperto basta digitare:
+
+{% highlight microsoftshell %}
+$PSVersionTable.PSVersion
+{% endhighlight %} e verificare il numero della Build.
+
+Una volta verificato la propria build bisogna abilitare la funzione nativa di windows per la gestione di macchine virtuali, questo perché WSL 2 per poter funzionare necessita di tale funzione.
+
+Anche qui è possibile abilitare la funzione tramite il menù "attiva o disattiva funzionalità di windows" abilitando la voce "Piattaforma macchina virtuale", o in alternativa lanciando PowerShell come amministratore e digitare:
+
+{% highlight microsoftshell %}
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+{% endhighlight %}
+
+Adesso riavviate il pc e impostiamo WSL 2 come versione predefinita.
+
+<h1>INSTALLAZIONE DEL KERNEL LINUX PER WSL 2</h1>
+
+Per impostazione predefinita quando si installerà una distribuzione Linux windows adopererà il WSL 1.
+Prima di rendere funzionante WSL 2 bisogna installare un componente aggiuntivo, per farlo Microsoft ci viene in aiuto poiché occorre semplicemente installare il seguente pacchetto [wsl_update_x64.msi], prima di procedere con l'installazione consiglio di dare una breve lettura al supporto Microsoft dedicato [wsl2kernel].
+
+Finalmente siamo pronti per installare le nostre distribuzioni Linux preferite.
+
+<h1> INSTALLAZIONE DI UBUNTU 20.04 LTS </h1>
+
+Dopo aver configurato correttamente il Sottosistema Windows per Linux possiamo procedere con l'installazione di una distribuzione GNU/Linux, per farlo basta andare nel Microsoft Store e cercare quella che fa al caso nostro.
+Lo Store di Microsoft nel tempo si è riempito di svariate distro dalla più conosciuta Ubuntu alla veterana Debian, passando per Kali Linux fino ad arrivare alla leggerissima Alpine Linux.
+
+Oggi procederemo con l'instalalzione di una delle distro Linux più conosciute e popolari, ossia Ubuntu 20.04 LTS. Per chi si cimenta per la prima volta in Ubuntu deve sapere che LTS sta per (long-term support) e offrono aggiornamenti per cinque anni.
+
+<img src="/assets/tutorial/tutorial1/Ubuntu20_04.png" alt="Microsoft Store" class="img-post"/>
+
+Una volta aver installato la nostra distro verifichiamo che effettivamente sia in esecuzione Ubuntu con il WSL 2 e non con la prima versione, apriamo PowerShell come amministratore ed eseguiamo il comando:
+{% highlight microsoftshell %}
+wsl --list -v
+{% endhighlight %}
+
+<img src="/assets/tutorial/tutorial1/wsl_list.png" alt="wsl --list -v" class="img-post"/>
+
+se Ubuntu è in esecuzione con la versione 1 terminate tutte le distribuzioni con il comando:
+{% highlight microsoftshell %}
+wsl --shutdown
+{% endhighlight %}
+
+e lanciate il comando:
+{% highlight microsoftshell %}
+wsl --set-version Ubuntu-20.04 2
+{% endhighlight %}
+
+Riavviamo il PC e rilanciamo il comando `wsl --list -v` verificando che tutto sia andato a buon fine.
+
+Non rimane altro che avviare Ubuntu, la procedura per il primo avvio richiede qualche secondo dopo di che ci chiederà di creare un nuovo account con la corrispettiva password (quando digitate la password sembra che non stiate scrivendo nulla ma non è così).
+
+<img src="/assets/tutorial/tutorial1/Ubuntu_primoavvio.png" alt="primo start Ubuntu" class="img-post"/>
+
+Una volta creato l'account aggiornate Ubuntu scrivendo nel terminale:
+{% highlight bash %}
+sudo apt update && sudo apt full-upgrade -y
+{% endhighlight %}
+
+Nei riferimenti trovate i link per conoscere i comandi base della shell GNU/Linux.
+È possibile anche configurare un'ambiente di sviluppo grafico ma per iniziare consiglio di cimentarvi con i comandi da terminale, successivamente vi mostrerò come configurare un desktop environment (DE).
+
+Nel prossimo tutorial vi parlerò di [Windows Terminal] e di come personalizzarlo per rendere più piacevole e più produttivo l'uso del terminale. Come molti prodotti Microsoft è stato messo a disposizione per la comunità del software libero al seguente repository [github Terminal].
+
+Se avete domande o suggerimenti scrivetemi pure!
+
+<img src="/assets/tutorial/tutorial1/neofetch.png" alt="Windows Terminal" class="img-post"/>
+
+
+
+
+Riferimenti:
+
+[Docs microsoft Wsl]
+
+[Comandi base shell GNU/Linux]
+
+
+[Comandi base shell GNU/Linux]: https://wiki.ubuntu-it.org/AmministrazioneSistema/ComandiBase
+
+[Windows Terminal]: /tutorial/2020/11/28/Windows-Terminal.html
+
+[github Terminal]: https://github.com/microsoft/terminal
+
+[Docs microsoft Wsl]: https://docs.microsoft.com/it-it/windows/wsl/
+
+[wsl2kernel]: https://aka.ms/wsl2kernel
+
+[wsl_update_x64.msi]: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+[WSL2-Linux-Kernel]: https://github.com/microsoft/WSL2-Linux-Kernel
+

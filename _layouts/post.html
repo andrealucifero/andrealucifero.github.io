@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="it">
+
+
+{% include head.html %}
+
+<body>
+    {% include header.html %}
+
+    <section>
+
+        <main class="page-content" aria-label="Content">
+
+            <div class="wrapper">
+
+                <h1 class="post-title">{{ page.title }}</h1>
+                <span class="post-meta">{{ page.date | date: "%-d %B %Y"}}</span>
+
+                <div class="post-content">
+
+
+
+                    {{ content }}
+                   
+                               
+                    <div class="home-tutorial-post">
+                        <a class="home-tutorial-post" href="/tutorial.html"> <-- Home Tutorial </a>
+                    </div>
+                                        
+
+                    
+                </div>
+
+            </div>
+        </main>
+
+    </section>
+
+
+    {% include footer.html %}
+</body>
+
+</html>
