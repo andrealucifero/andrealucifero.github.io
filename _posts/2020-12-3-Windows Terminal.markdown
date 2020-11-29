@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Usare e personalizzare Windows Terminal"
-date:   2020-11-30 10:30:00 +0200
+date:   2020-12-03 10:30:00 +0200
 categories: tutorial
 ---
 <div class="contenuto-centrato">
