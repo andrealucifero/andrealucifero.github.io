@@ -1,13 +1,13 @@
 language: ruby
 rvm:
-  - 2.4.4
+  - 2.7.1
 
 before_install:
     - gem install bundler
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-script: chmod +x ./script/jekyll-rebuild.sh && ./script/jekyll-rebuild.sh
+script: "bundle exec jekyll build"
 
 # branch whitelist, only for GitHub Pages
 branches:
