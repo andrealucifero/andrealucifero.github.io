@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.4.4
 
-  before_install:
+before_install:
     - gem install bundler
 
 # Assume bundler is being used, therefore
