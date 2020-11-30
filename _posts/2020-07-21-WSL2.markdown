@@ -117,7 +117,7 @@ Riferimenti:
 
 [Comandi base shell GNU/Linux]: https://wiki.ubuntu-it.org/AmministrazioneSistema/ComandiBase
 
-[Windows Terminal]: /tutorial/2020/11/28/Windows-Terminal.html
+[Windows Terminal]: /tutorial/2020/12/03/Windows-Terminal.html
 
 [github Terminal]: https://github.com/microsoft/terminal
 
