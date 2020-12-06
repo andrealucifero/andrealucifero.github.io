@@ -2,9 +2,6 @@ language: ruby
 rvm:
   - 2.7.1
 
-on:
-  schedule:
-    - cron: '30 */22 * * *'
 
 before_install:
     - gem install bundler
@@ -12,6 +9,7 @@ before_install:
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 script: chmod +x ./script/jekyll-rebuild.sh && ./script/jekyll-rebuild.sh
+exclude: [vendor]
 
 # branch whitelist, only for GitHub Pages
 branches:
