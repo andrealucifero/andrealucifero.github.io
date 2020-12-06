@@ -1,11 +1,6 @@
 language: ruby
 rvm:
   - 2.7.1
-
-deploy:
-  provider: pagespages:git
-  skip_cleanup: true
-  keep_history: true
   
 before_install:
     - gem install bundler
