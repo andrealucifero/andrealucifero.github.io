@@ -4,7 +4,8 @@ rvm:
 
 
 before_install:
-    - gem install bundler
+    - phpenv config-rm xdebug.ini 
+    - gem install bundler  
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
@@ -14,6 +15,9 @@ script: chmod +x ./script/jekyll-rebuild.sh && ./script/jekyll-rebuild.sh
 branches:
   only:
   - master     # test the master branch
+
+matrix:
+  fast_finish: true
 
 cache: bundler # caching bundler gem packages will speed up build
 
