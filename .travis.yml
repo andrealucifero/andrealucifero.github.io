@@ -4,7 +4,6 @@ rvm:
 
 
 before_install:
-    - phpenv config-rm xdebug.ini 
     - gem install bundler  
 
 # Assume bundler is being used, therefore
