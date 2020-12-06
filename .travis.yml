@@ -2,7 +2,10 @@ language: ruby
 rvm:
   - 2.7.1
 
-  
+on:
+  schedule:
+    - cron: '30 */22 * * *'
+
 before_install:
     - gem install bundler
 
