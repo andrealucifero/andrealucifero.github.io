@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Usare e personalizzare Windows Terminal"
-date:   2020-12-10 00:00:00 +0200
+date:   2020-12-10 10:30:00 +0200
 categories: tutorial
-tags: windows gnu/linux wsl windows10
+tags: windows gnu/linux wsl windows10 Terminal WindowsTerminal
 ---
 <div class="contenuto-centrato">
 <img src="/assets/tutorial/tutorial2/top.png" alt="Microsoft e GNU/Linux" class="img-centrata" oncontextmenu="return false;" /> </div>
@@ -14,7 +14,7 @@ Ci siamo lasciati a distanza di mesi con la procedura su [come usare GNU/Linux i
 
 <h1>Cos'è Windows Terminal?</h1>
 
-Windows Terminal è un app pratica, potente e multifunzionale che permette di usare strumenti utili da riga di comando, è possibile scaricarla gratuitamente dal Microsoft Store [Windows Terminal].
+Windows Terminal è un applicazione pratica, potente e multifunzionale che permette di usare strumenti utili da riga di comando, è possibile scaricarla gratuitamente dal Microsoft Store [Windows Terminal].
 
 Terminal supporta in maniera nativa il classico prompt dei comandi o cmd, il fresco PowerShell, il caro WSL, Azure Cloud shell e tutti quei programmi che sono forniti di un'interfaccia a riga di comando.
 <br>Tra le principali funzionalità possiamo trovare la gestione di più schede e più riquadri in simultanea, un supporto completo per i caratteri Unicode, un accelerazione GPU per il motore di rendering del testo e la piena personalizzazione di temi, del colore e delle scelte rapide. 
