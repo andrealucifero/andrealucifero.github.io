@@ -293,4 +293,4 @@ Download:
 
 [github Terminal]: https://github.com/microsoft/terminal
 
-[come usare GNU/Linux in Windows]: /tutorial/2020/07/28/WSL2.html
+[come usare GNU/Linux in Windows]: /tutorial/2020/07/31/WSL2.html
