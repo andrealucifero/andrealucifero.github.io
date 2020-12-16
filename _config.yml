@@ -33,15 +33,13 @@ soundcloud_username: Andrea Lucifero
 behance_username: Andrea Lucifero
 google_analytics: "UA-171022761-1"
 
-#paginate: 2
-#paginate_path: "tutorial/page:num/"
 
 theme: minima
 # Build settings
 plugins:
   - jekyll-feed
   - jekyll-sitemap
- # - jekyll-paginate
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
