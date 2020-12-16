@@ -1,4 +1,5 @@
 language: ruby
+cache: bundler
 rvm:
   - 2.7.1
 
@@ -14,8 +15,6 @@ script: chmod +x ./script/jekyll-rebuild.sh && ./script/jekyll-rebuild.sh
 branches:
   only:
   - master     # test the master branch
-
-cache: bundler # caching bundler gem packages will speed up build
 
 # Optional: disable email notifications about the outcome of your builds
 notifications:
