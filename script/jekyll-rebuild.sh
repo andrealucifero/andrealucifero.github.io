@@ -18,7 +18,10 @@ git clone https://${GH_TOKEN}@github.com/andrealucifero/andrealucifero.github.io
 
 # build with Jekyll into "_site"
 # exec jekyll build
+bundle config set --local path 'vendor/bundle
+bundle config set --local deployment 'true'
 bundle exec jekyll build
+
 
 # push empty commit
 cd _site
