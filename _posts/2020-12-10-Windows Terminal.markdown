@@ -19,7 +19,7 @@ Windows Terminal è un applicazione pratica, potente e multifunzionale che perme
 Terminal supporta in maniera nativa il classico prompt dei comandi o cmd, il fresco PowerShell, il caro WSL, Azure Cloud shell e tutti quei programmi che sono forniti di un'interfaccia a riga di comando.
 <br>Tra le principali funzionalità possiamo trovare la gestione di più schede e più riquadri in simultanea, un supporto completo per i caratteri Unicode, un accelerazione GPU per il motore di rendering del testo e la piena personalizzazione di temi, del colore e delle scelte rapide. 
 
-<img src="/assets/tutorial/tutorial2/terminal_schermata.png" alt="schermata Windows Terminal" class="img-post"/>
+<img src="/assets/tutorial/tutorial2/terminal_schermata1.png" alt="schermata Windows Terminal" class="img-post"/>
 
 <h1>Come personalizzare Windows Terminal</h1>
 
@@ -62,156 +62,173 @@ Di seguito vi lascio la mia configurazione del file `setting.json` in cui è pos
 {% highlight json-doc %}
  {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "defaultProfile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-    // per vedere altri settaggi per le impostazioni globali, visit https://aka.ms/terminal-global-settings
+    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+    // You can add more global application settings here.
+    // To learn more about global settings, visit https://aka.ms/terminal-global-settings
     // If enabled, selections are automatically copied to your clipboard.
     "copyOnSelect": false,
     // If enabled, formatted data is also copied to your clipboard
     "copyFormatting": false,
-    // Per altre opzioni sui profiles, visit https://aka.ms/terminal-profile-settings
+    // A profile specifies a command to execute paired with information about how it should look and feel.
+    // Each one of them will appear in the 'New Tab' dropdown,
+    //   and can be invoked from the commandline with `wt.exe -p xxx`
+    // To learn more about profiles, visit https://aka.ms/terminal-profile-settings
     "profiles": {
         "defaults": {
-            // cursore predefinito in tutti i profili
+            // Put settings here that you want to apply to all profiles.
             "cursorShape": "vintage"
         },
         "list": [
+        
             {
-                // Preferenze di wsl Debian.
-                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-                "suppressApplicationTitle": true,
-                "tabTitle": "Debian",
-                "useAcrylic": true,
-                "acrylicOpacity": 0.7,
-                "colorScheme": "Material",
-                "icon": "C:/Users/andre/Pictures/debian.png",
-                "name": "Debian",
-                "source": "Windows.Terminal.Wsl",
-                "hidden": false
-            },
-            {
-                // Preferenze di powershell.exe.
+                // Make changes here to the powershell.exe profile.
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "useAcrylic": true,
                 "acrylicOpacity": 0.8,
-                "colorScheme": "Material Palenight",
+                "colorScheme": "Campbell Powershell",
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
                 "hidden": false
             },
             {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "icon": "C:/Users/andre/Pictures/img_terminal/debian_jekyll.png",
+                "colorScheme": "Dracula",
+                "suppressApplicationTitle": true,
+                "name": "Jekyll-Debian",
+                "tabTitle": "Jekyll-Debian 🧛‍♂️",
+                "backgroundImage": "C:/Users/andre/Pictures/img_terminal/debian_jekyll.png",
+                "backgroundImageOpacity" : 0.5,
+                "backgroundImageStretchMode": "none",
+                "backgroundImageAlignment": "bottomRight", 
+                "hidden": false,
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "suppressApplicationTitle": true,
+                "icon": "C:/Users/andre/Pictures/img_terminal/ubuntu.png ",
+                "name": "Ubuntu-20.04",
+                "tabTitle": "Ubuntu-20.04",
+                "colorScheme": "Ubuntu",
+                "backgroundImage": "C:/Users/andre/Pictures/img_terminal/ubuntu.png",
+                "backgroundImageOpacity" : 0.5,
+                "backgroundImageStretchMode": "none",
+                "backgroundImageAlignment": "bottomRight",
+                "hidden": false,                
+                "source": "Windows.Terminal.Wsl"
+            },     
+            {
                 // Make changes here to the cmd.exe profile.
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "useAcrylic" : true,
-                "acrylicOpacity" : 0.9,
-                "colorScheme" : "Campbell",
+                // "useAcrylic" : true,
+               // "acrylicOpacity" : 0.9,
+                "colorScheme" : "Vintage",
                 "cursorColor" : "#FFFFFD",
                 "fontFace" : "Cascadia Code PL",     
                 "commandline": "cmd.exe",
                 "hidden": false
             },
             {
-                // Connessione remota con SSH
+                // Connects to a remote machine using SSH
                 "name": "SSH Termux 🏍",
                 "suppressApplicationTitle": true,
                 "tabTitle": "SSH Termux 📱",
                 "commandline": "ssh nome@indirizzoip -p numeroporta",
-                "icon": "C:/Users/andre/Pictures/termux.png",
-                "colorScheme": "TermuxColor",
-                "fontFace": "Cascadia Code",
-                "acrylicOpacity": 0.8,
-                "useAcrylic": true
+                "icon": "C:/Users/andre/Pictures/img_terminal/termux.png",
+                "colorScheme": "termuxColor",
+                "backgroundImage": "C:/Users/andre/Pictures/img_terminal/termux.png",
+                "backgroundImageOpacity" : 0.5,
+                "backgroundImageStretchMode": "none",
+                "backgroundImageAlignment": "bottomRight",
+                "fontFace": "Cascadia Code"
+                
             },
             {
-                //Preferenze di Azure Cloud Shell
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                //Preferenze di Ubuntu-20.04
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "suppressApplicationTitle": true,
-                "name": "Ubuntu-20.04",
-                "tabTitle": "Ubuntu-20.04",
-                "hidden": false,                
-                "source": "Windows.Terminal.Wsl"
             }
+         
+           
         ]
     },
-    
-    //Campo dedicato ai temi di colore personalizzati, visit https://aka.ms/terminal-color-schemes
-    
+    // Add custom color schemes to this array.
+    // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
     "schemes": [
-        {
-            "name": "Material",
-            "background": "#10181d",
-            "foreground": "#daffff",
-            "black": "#000000",
-            "blue": "#82aaff",
-            "brightBlack": "#546e7a",
-            "brightBlue": "#82aaff",
-            "brightCyan": "#89ddff",
-            "brightGreen": "#c3e88d",
-            "brightPurple": "#c792ea",
-            "brightRed": "#ff5370",
-            "brightWhite": "#ffffff",
-            "brightYellow": "#ffcb6b",
-            "cyan": "#89ddff",
-            "green": "#c3e88d",
-            "purple": "#c792ea",
-            "red": "#ff5370",
-            "white": "#ffffff",
-            "yellow": "#ffcb6b"
+        { 
+            "name": "Dracula",
+            "cursorColor": "#F8F8F2",
+            "selectionBackground": "#44475A",
+            "background": "#282A36",
+            "foreground": "#F8F8F2",
+            "black": "#21222C",
+            "blue": "#BD93F9",
+            "cyan": "#8BE9FD",
+            "green": "#50FA7B",
+            "purple": "#FF79C6",
+            "red": "#FF5555",
+            "white": "#F8F8F2",
+            "yellow": "#F1FA8C",
+            "brightBlack": "#6272A4",
+            "brightBlue": "#D6ACFF",
+            "brightCyan": "#A4FFFF",
+            "brightGreen": "#69FF94",
+            "brightPurple": "#FF92DF",
+            "brightRed": "#FF6E6E",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFFA5"
         },
-       {
-            "name": "Material Palenight",
-            "background": "#292d3e",
-            "foreground": "#cdfff6",
-            "black": "#000000",
-            "blue": "#82aaff",
-            "brightBlack": "#676e95",
-            "brightBlue": "#81a9ff",
-            "brightCyan": "#89ddff",
-            "brightGreen": "#c3e88d",
-            "brightPurple": "#c792ea",
-            "brightRed": "#ff5370",
-            "brightWhite": "#ffffff",
-            "brightYellow": "#ffcb6b",
-            "cyan": "#89ddff",
-            "green": "#c3e88d",
-            "purple": "#c792ea",
-            "red": "#ff5370",
-            "white": "#ffffff",
-            "yellow": "#ffcb6b"
-        },
+        
         {
-            // Color Scheme: TermuxColor
-            "name":"TermuxColor",
-            "background": "#470e36",
-            "black": "#4E9A06",
-            "blue": "#3465A4",
+            "name": "Ubuntu",
+            "black": "#2e3436",
+            "red": "#cc0000",
+            "green": "#4e9a06",
+            "yellow": "#c4a000",
+            "blue": "#3465a4",
+            "purple": "#75507b",
+            "cyan": "#06989a",
+            "white": "#d3d7cf",
             "brightBlack": "#555753",
-            "brightBlue": "#729FCF",
-            "brightCyan": "#34E2E2",
-            "brightGreen": "#8AE234",
-            "brightPurple": "#eec3e9",
-            "brightRed": "#EF2929",
-            "brightWhite": "#EEEEEE",
-            "brightYellow": "#FCE94F",
-            "cyan": "#06989A",
-            "foreground": "#EEEEEE",
-            "green": "#c8f3c5",
-            "purple": "#dcd4dd",
-            "red": "#CC0000",
-            "white": "#ffffff",
-            "yellow": "#C4A000"
+            "brightRed": "#ef2929",
+            "brightGreen": "#8ae234",
+            "brightYellow": "#fce94f",
+            "brightBlue": "#729fcf",
+            "brightPurple": "#ad7fa8",
+            "brightCyan": "#34e2e2",
+            "brightWhite": "#eeeeec",
+            "background": "#300a24",
+            "foreground": "#eeeeec"
+        },
+        {
+            // Color Scheme: colorTermux
+            "name": "termuxColor",
+            "black": "#000000",
+            "red": "#9f0000",
+            "green": "#008b00",
+            "yellow": "#ffd000",
+            "blue": "#0081ff",
+            "purple": "#bc00ca",
+            "cyan": "#008b8b",
+            "white": "#bbbbbb",
+            "brightBlack": "#555555",
+            "brightRed": "#ff0000",
+            "brightGreen": "#00ee00",
+            "brightYellow": "#ffff00",
+            "brightBlue": "#0000ff",
+            "brightPurple": "#ff00ff",
+            "brightCyan": "#00cdcd",
+            "brightWhite": "#ffffff",
+            "background": "#000000",
+            "foreground": "#00a595"
         }
     ],
-    
-    // campo dedicato alle Azioni, visit https://aka.ms/terminal-keybindings
-   
-   "keybindings": [
+    // Add custom keybindings to this array.
+    // To unbind a key combination from your defaults.json, set the command to "unbound".
+    // To learn more about keybindings, visit https://aka.ms/terminal-keybindings
+    "keybindings": [
         // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
         // These two lines additionally bind them to Ctrl+C and Ctrl+V.
         // To learn more about selection, visit https://aka.ms/terminal-selection
@@ -249,10 +266,6 @@ Di seguito vi lascio la mia configurazione del file `setting.json` in cui è pos
                 "action": "splitPane",
                 "split": "auto"
             },
-            "keys": "alt+shift+s"
-        }
-    ]
-}
 {% endhighlight %}
 
 L'ultima sezione ossia quella delle azioni, come potete vedere dal mio `setting.json` serve per personalizzare le scorciatoie da tastiera.
