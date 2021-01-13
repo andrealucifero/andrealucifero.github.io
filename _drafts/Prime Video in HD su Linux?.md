@@ -4,9 +4,10 @@ title:  "Prime Video in HD su Linux?<br>
 Scrcpy e Android ci vengono in soccorso" 
 categories: tutorial
 tags: android gnu/linux scrcpy adb bash script PrimeVideo
+sitemap: false
 ---
 <div class="contenuto-centrato">
-<img src="/assets/tutorial/tutorial2/top.png" alt="Microsoft e GNU/Linux" class="img-centrata" oncontextmenu="return false;" /> </div>
+<img src="/assets/tutorial/tutorial3/top.png" alt="Scrcpy and Lcfcpy.sh" class="img-centrata" oncontextmenu="return false;" /> </div>
 
 Per chi come me usa come sistema operativo principale una qualsiasi distribuzione GNU/Linux e possiede un abbonamento a Prime video, si sarà accorto che i contenuti sono bloccati nella qualità SD (standard Definition) e che non si trova una applicazione per poter usufruire dei contenuti in offline.
 
