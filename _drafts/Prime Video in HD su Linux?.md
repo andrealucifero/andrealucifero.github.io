@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Prime Video in HD su Linux?<br>
+title:  "Prime Video offline su Linux?<br>
 Scrcpy e Android ci vengono in soccorso" 
 categories: tutorial
 tags: android gnu/linux scrcpy adb bash script PrimeVideo
