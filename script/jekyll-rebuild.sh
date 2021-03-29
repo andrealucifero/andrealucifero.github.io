@@ -25,7 +25,7 @@ bundle exec jekyll build
 cd _site
 git config user.email "andrea.lucifero@hotmail.com"
 git config user.name "andrealucifero"
-git commit -a -m "rebuild pages" --allow-empty
+git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push origin main
 
 # remove last empty commit
