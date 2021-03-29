@@ -14,7 +14,7 @@ rm -rf _site
 mkdir _site
 
 # clone remote repo to "_site"
-git clone https://${GH_TOKEN}@github.com/andrealucifero/andrealucifero.github.io.git --branch master _site
+git clone https://${GH_TOKEN}@github.com/andrealucifero/andrealucifero.github.io.git --branch main _site
 
 # build with Jekyll into "_site"
 # exec jekyll build
@@ -26,8 +26,8 @@ cd _site
 git config user.email "andrea.lucifero@hotmail.com"
 git config user.name "andrealucifero"
 git commit -a -m "rebuild pages" --allow-empty
-git push origin master
+git push origin main
 
 # remove last empty commit
 git reset HEAD~
-git push origin master --force
+git push origin main --force
