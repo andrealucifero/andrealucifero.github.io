@@ -7,7 +7,7 @@ tags: android gnu/linux scrcpy adb bash script PrimeVideo lcfcpy.sh
 sitemap: false
 ---
 <div class="contenuto-centrato">
-<img src="/assets/tutorial/tutorial4/top.png" alt="Scrcpy and Lcfcpy.sh" class="img-centrata" oncontextmenu="return false;" /> </div>
+<img src="/assets/tutorial/tutorial4/top.jpg" alt="Scrcpy and Lcfcpy.sh" class="img-centrata" oncontextmenu="return false;" /> </div>
 
 Nel tutorial precedente vi ho parlato di scrcpy tool open source e multipiattaforma che permette di visualizzare e controllare i dispositivi Android, collegati tramite USB o via wireless.
 Personalmente adopero scrcpy per usufruire del mio abbonamento a prime video, soprattutto per avere i contenuti a disposizione offline.
@@ -15,7 +15,7 @@ Personalmente adopero scrcpy per usufruire del mio abbonamento a prime video, so
 Sfortunatamente il mio moto G7 plus ha un nocht a goccia e pur avendo ricevuto Android 10 non è possibile in alcune applicazioni adoperare tutto il display, Amazon Prime Video è una di queste. <br>
 Risultato, fruizione decentrata sia sul piccolo schermo che sul grande schermo.
 
-<img src="/assets/tutorial/tutorial4/Schermata da 2021-02-22 17-38-00.png" alt="Scrcpy and Lcfcpy.sh" class="img-centrata" oncontextmenu="return false;" />
+<img src="/assets/tutorial/tutorial4/Schermata da 2021-02-22 17-38-00.png" alt="immagine_decentrata" class="img-centrata" oncontextmenu="return false;" />
 
 Per aggirare tale problema utilizzo la modalità Desktop disponibile da Android 10 in su, pienamente compatibile con scrcpy. In questo modo è possibile adoperare il telefono come se si stesse usando in parte un Samsung Dex.
 
@@ -44,7 +44,7 @@ Per ottimizzare i tempi non volendo ogni qualvolta digitare tutti i comandi nece
 - Il primo consente di fare quanto detto prima.<br>
 - Il secondo consente di dividere la schermata del terminale in due parti o più quando si adopera scrcpy, in questo modo è possibile impartire contemporaneamente dei comandi adb preimpostati in precedenza, ad esempio cambiare la tastiera o abilitare la rete dati senza toccare il proprio telefono.
 
-<img src="/assets/tutorial/tutorial4/Schermata da 2021-02-22 17-35-53.png" alt="Scrcpy and Lcfcpy.sh" class="img-centrata" oncontextmenu="return false;" />
+<img src="/assets/tutorial/tutorial4/Schermata da 2021-03-27 15-22-25.png" alt="Scrcpy and Lcfcpy.sh" class="img-centrata" oncontextmenu="return false;" />
 
 Potete scaricare i miei due script direttamente dal mio [github] o per chi preferisce adoperare il terminale `git clone https://github.com/andrealucifero/lcfcpy.sh.git`, per funzioni base e per chi non ha molta esperienza scaricate quello denominato **lcfcy.sh** richiede solo **scrcpy** e **adb tools** installato.
 
@@ -56,6 +56,8 @@ Leggere il file README.md contenuto all'interno.
 Prima di eseguire lo script ricordarsi di modificare le variabili come: dimensioni del display e ip dispositivo per un uso wirless. (cambiare il valore dopo il segno = senza lasciare spazi). Le variabili si trovano nei corrispettivi file “lcfcpy.sh” o in “variables_script.sh” a secondo della versione scaricata, è possibile adoperare qualsiasi editor di testo.
 
 Per eseguirlo basta andare all’interno della directory ed eseguire `./lcfcpy.sh` se da errore verificare che lo script possieda i permessi per essere eseguito altrimenti digitare  `chmod +xr lcfcpy.sh` o `chmod +xr lcfcpy.sh variables_script.sh`.
+
+<img src="/assets/tutorial/tutorial4/Schermata da 2021-02-22 17-33-53.png" alt="Lcfcpy.sh" class="img-centrata" oncontextmenu="return false;" />
 
 Per maggiori dettagli per quanto riguarda **lcfcpy.sh** vi invito a consultare direttamente il mio repository su [GitHub - andrealucifero/lcfcpy.sh].
 

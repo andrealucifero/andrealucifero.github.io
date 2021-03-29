@@ -6,8 +6,8 @@ categories: tutorial
 tags: android gnu/linux scrcpy adb bash script PrimeVideo
 sitemap: false
 ---
-<div class="contenuto-centrato">
-<img src="/assets/tutorial/tutorial3/top.png" alt="Scrcpy tools" class="img-centrata" oncontextmenu="return false;" /> </div>
+
+<img src="/assets/tutorial/tutorial3/top.jpg" alt="Scrcpy tools" class="img-centrata" oncontextmenu="return false;" />
 
 Per chi come me adopera come sistema operativo principale una qualsiasi distribuzione GNU/Linux e possiede un abbonamento a Prime video, si sarà accorto che i contenuti sono bloccati nella qualità SD (standard Definition) e che non esiste una client per poter usufruire dei contenuti Offline.
 
@@ -56,6 +56,8 @@ Adesso passiamo al debug USB: **Impostazioni** --> **Sistema** --> **Avanzate** 
 Questo è il percorso che va fatto sulla stragrande maggioranza degli smartphone Android, se non riuscite ad attivare la modalità sviluppatori controllare il proprio manuale.
 
 <h1> Avviare Scrcpy </h1>
+<img src="/assets/tutorial/tutorial3/Schermata da 2021-03-27 15-11-40.png" alt="Scrcpy" class="img-centrata" oncontextmenu="return false;" />
+
 
 Come vi dicevo **Scrcpy** è un tool che funziona da riga di comando non vi resta altro che collegare il vostro smartphone tramite cavo usb aprire un terminale e lanciare `scrcpy` e il gioco è fatto.
 
