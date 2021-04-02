@@ -2,9 +2,9 @@
 layout: post
 title:  "Prime Video su Linux?<br>
         Scrcpy e Android ci vengono in soccorso" 
+date:   2021-04-06 10:30:00 +0200
 categories: tutorial
 tags: android gnu/linux scrcpy adb bash script PrimeVideo
-sitemap: false
 ---
 
 <img src="/assets/tutorial/tutorial3/top.jpg" alt="Scrcpy tools" class="img-centrata" oncontextmenu="return false;" />
