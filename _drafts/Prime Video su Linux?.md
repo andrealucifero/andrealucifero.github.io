@@ -30,7 +30,7 @@ Requisiti:
 <li> Modalità debug usb attiva sul dispositivo Android;</li>
 <li> Per connettersi con il WI-FI necessita di <strong>android tools Adb</strong> installato sul pc. </li>
 
-<br>Consiglio di scaricare la versione 1.17 in poi di scrcpy in quando gestisce anche il numero di display secondari o virtuali, di cui parleremo più avanti.
+<br>Consiglio di scaricare dalla versione 1.17 in poi dacché scrcpy gestisce anche il numero di display secondari o virtuali, di cui parleremo più avanti.
 
 Per scaricare scrcpy su **Ubuntu** o su una sua derivata consiglio il pacchetto snap;
 - `snap install scrcpy`
@@ -69,10 +69,10 @@ Se si volesse collegare lo smartphone tramite un collegamento Wi-Fi, dopo aver i
 Verificare che il computer e lo smartphone siano connessi nella stessa rete, scollegare il cavo USB ed eseguire;
 `adb connect DEVICE_IP:5555` (inserire l’indirizzo del proprio smartphone)
 
-Di norma scrcpy ha come bit rate di default 8Mbps, lo sviluppatore ci suggerisce che per un uso in Wi-Fi conviene scenderla a 2Mbps, per eseguire scrcpy riducendo la bit rate eseguire:
+Di norma scrcpy ha come bit rate di default 8Mbps, lo sviluppatore ci suggerisce che per un uso in Wi-Fi conviene scalarla a 2Mbps, per eseguire scrcpy riducendo la bit rate eseguire:
 `scrcpy –b 2M` per dispositivi di fascia bassa potrebbe essere utile ridurre anche la risoluzione ad esempio  `scrcpy –b 2M –m 800`
 
-Nel prossimo tutorial, vi mostrerò come abilitare la modalita desktop sugli smartphone Android 10 o superiore, e vi parlerò di un comodo script realizzato da me per eseguire scrcpy e comandi adb predefiniti.
+Nel prossimo tutorial, vi mostrerò come abilitare la modalità desktop sugli smartphone Android 10 o superiore, e vi parlerò di un comodo script realizzato da me per eseguire scrcpy e comandi adb preimpostati.
 
 #### Riferimenti:
 
