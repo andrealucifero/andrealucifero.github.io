@@ -11,7 +11,7 @@ tags: android gnu/linux scrcpy adb bash script PrimeVideo
 
 Per chi come me adopera come sistema operativo principale una qualsiasi distribuzione GNU/Linux e possiede un abbonamento a Prime video, si sarà accorto che i contenuti sono bloccati nella qualità SD (standard Definition) e che non esiste una client per poter usufruire dei contenuti Offline.
 
-Spulciando per il web non è possibile raggirare questo blocco in alcun modo, c’è chi sostiene che bisogna cambiare l’**user agent** al proprio Web Browser, altri dicono che l’unica soluzione sia di virtualizzare Windows o il suo Browser nativo, ma come sappiamo per virtualizzare un OS serve energia e potenza.
+Spulciando per il web non è possibile aggirare questo blocco in alcun modo, c’è chi sostiene che bisogna cambiare l’**user agent** al proprio Web Browser, altri dicono che l’unica soluzione sia di virtualizzare Windows o il suo Browser nativo, ma come sappiamo per virtualizzare un OS serve energia e potenza.
 
 Diversamente ormai quasi tutti possediamo un dispositivo Android ed è proprio qui che ci viene in soccorso **scrcpy**. Questo strumento multi piattaforma da riga di comando ci consente di visualizzare e di controllare il nostro dispositivo Android tramite cavo USB o su TCP /IP. Non richiede permessi di root e occorre semplicemente abilitare la modalità debg usb.
 
