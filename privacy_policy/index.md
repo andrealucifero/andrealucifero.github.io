@@ -9,7 +9,7 @@ date:   2021-04-2
 Questo sito web non effettua alcuna forma di raccolta di dati personali dei visitatori, 
 salvo quelli che il visitatore volontariamente comunicherà al responsabile del sito, 
 Andrea Lucifero, al fine di stabilire un contatto per scopi meramente attinenti all’attività professionale.
-I dati personali comunicati a mezzo e-mail o modulo di contatto presente in questo sito web non saranno archiviati e verranno trattati esclusivamente su strumenti e piattaforme informatiche prevalentemente basate sui sistemi operativi Windows, GNU/Linux e Android.
+I dati personali comunicati a mezzo e-mail non saranno archiviati e verranno trattati esclusivamente su strumenti e piattaforme informatiche prevalentemente basate sui sistemi operativi Windows, GNU/Linux e Android.
 
 <h1> Cookies di terze parti </h1>
 
