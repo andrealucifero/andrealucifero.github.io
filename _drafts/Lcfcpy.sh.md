@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title:  "Lcfcpy.sh<br>
         un lanciatore per scrcpy e di comandi adb" 
@@ -9,15 +9,15 @@ sitemap: false
 <div class="contenuto-centrato">
 <img src="/assets/tutorial/tutorial4/top.jpg" alt="Scrcpy and Lcfcpy.sh" class="img-centrata" oncontextmenu="return false;" /> </div>
 
-Nel tutorial precedente vi ho parlato di scrcpy tool open source e multipiattaforma che permette di visualizzare e controllare i dispositivi Android, collegati tramite USB o via wireless.
-Personalmente adopero scrcpy per usufruire del mio abbonamento a prime video, soprattutto per avere i contenuti a disposizione offline.
+Nel tutorial precedente vi ho parlato di scrcpy, tool open source e multi piattaforma che permette di visualizzare e controllare i dispositivi Android collegati tramite USB o via wireless.
+Personalmente adopero scrcpy per usufruire del mio abbonamento a prime video, soprattutto per poter avere i contenuti offline.
 
-Sfortunatamente il mio moto G7 plus ha un nocht a goccia e pur avendo ricevuto Android 10 non è possibile in alcune applicazioni adoperare tutto il display, Amazon Prime Video è una di queste. <br>
+Sfortunatamente il mio moto G7 plus ha un nocht a goccia e pur avendo ricevuto Android 10 certe applicazioni non riescono a sfruttare tutto il display. Amazon Prime Video è una di queste. <br>
 Risultato, fruizione decentrata sia sul piccolo schermo che sul grande schermo.
 
 <img src="/assets/tutorial/tutorial4/Schermata da 2021-02-22 17-38-00.png" alt="immagine_decentrata" class="img-centrata" oncontextmenu="return false;" />
 
-Per aggirare tale problema utilizzo la modalità Desktop disponibile da Android 10 in su, pienamente compatibile con scrcpy. In questo modo è possibile adoperare il telefono come se si stesse usando in parte un Samsung Dex.
+Per aggirare tale problema utilizzo la modalità Desktop disponibile da Android 10 in su, pienamente compatibile con scrcpy. In questo modo è possibile adoperare il telefono come se si stesse usando in parte la modalità Samsung Dex.
 
 Ci sono due vie per abilitare la Desktop mode, la prima tramite il menù **Impostazioni** –> **Sistema** –> **Avanzate** –> **Opzioni sviluppo** –> **Abilita Desktop mode** e creare un display virtuale, consiglio anche di attivare le **finestre mobili** disponibile già nei dispositivi con Android 7, infine per rendere le modifiche effettive riavviare il dispositivo.
 
@@ -51,15 +51,16 @@ Potete scaricare i miei due script direttamente dal mio [github] o per chi prefe
 Per chi volesse provare la versione più “complessa” scaricate la cartella **Lcfcpy_tmux**, all’interno troverete due script che devono stare necessariamente insieme perché il primo **“lcfcpy.sh”** serve a richiamare il secondo **“variables_script.sh”** che contiene i comandi **adb** e di **scrcpy** con annesse le relative variabili. <br>
 Per funzionare correttamente è necessario installare oltre a **scrcpy** e **adb tools** anche **tmux** (terminal multiplexr disponibile nei maggiori repo [Tmux github]).
 
-Leggere il file README.md contenuto all'interno.
+Leggere il file **README.md** contenuto all'interno per il corretto uso.
 
 Prima di eseguire lo script ricordarsi di modificare le variabili come: dimensioni del display e ip dispositivo per un uso wirless. (cambiare il valore dopo il segno = senza lasciare spazi). Le variabili si trovano nei corrispettivi file “lcfcpy.sh” o in “variables_script.sh” a secondo della versione scaricata, è possibile adoperare qualsiasi editor di testo.
 
-Per eseguirlo basta andare all’interno della directory ed eseguire `./lcfcpy.sh` se da errore verificare che lo script possieda i permessi per essere eseguito altrimenti digitare  `chmod +xr lcfcpy.sh` o `chmod +xr lcfcpy.sh variables_script.sh`.
+Per eseguirlo basta andare all’interno della directory e lanciare `sh ./lcfcpy.sh` se da errore verificare che lo script possieda i permessi per essere eseguito e verificare la posizione degli script all’interno delle variabili se coincidono. <br>
+Per ottenere i permessi di esecuzione digitare `chmod +xr lcfcpy.sh` o `chmod +xr lcfcpy.sh variables_script.sh`.
 
 <img src="/assets/tutorial/tutorial4/Schermata da 2021-02-22 17-33-53.png" alt="Lcfcpy.sh" class="img-centrata" oncontextmenu="return false;" />
 
-Per maggiori dettagli per quanto riguarda **lcfcpy.sh** vi invito a consultare direttamente il mio repository su [GitHub - andrealucifero/lcfcpy.sh].
+Per maggiori dettagli su **lcfcpy.sh** vi invito a consultare direttamente il mio repository su [GitHub - andrealucifero/lcfcpy.sh].
 
 #### Riferimenti:
 
@@ -69,10 +70,10 @@ Per maggiori dettagli per quanto riguarda **lcfcpy.sh** vi invito a consultare d
 
 - [Tmux github]
 
-- [GitHub - andrealucifero/lcfcpy.sh]
+- [GitHub Lcfcpy.sh]
 
 [GitHub scrcpy]: https://github.com/Genymobile/scrcpy
-[github]: https://github.com/andrealucifero/lcfcpy.sh
+[Github Lcfcpy.sh]: https://github.com/andrealucifero/lcfcpy.sh
 [GitHub - andrealucifero/lcfcpy.sh]: https://github.com/andrealucifero/lcfcpy.sh
 [adb tools]: https://developer.android.com/studio/command-line/adb
 [Tmux github]: https://github.com/tmux/tmux/wiki
