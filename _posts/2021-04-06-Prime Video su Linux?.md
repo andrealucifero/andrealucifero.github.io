@@ -72,7 +72,7 @@ Verificare che il computer e lo smartphone siano connessi nella stessa rete, sco
 Di norma scrcpy ha come bit rate di default 8Mbps, lo sviluppatore ci suggerisce che per un uso in Wi-Fi conviene scalarla a 2Mbps, per eseguire scrcpy riducendo la bit rate eseguire:
 `scrcpy –b 2M` per dispositivi di fascia bassa potrebbe essere utile ridurre anche la risoluzione ad esempio  `scrcpy –b 2M –m 800`
 
-Nel prossimo tutorial, vi mostrerò come abilitare la modalità desktop sugli smartphone Android 10 o superiore, e vi parlerò di un comodo script realizzato da me per eseguire scrcpy e comandi adb preimpostati.
+Nel prossimo tutorial, vi mostrerò come abilitare la modalità desktop sugli smartphone Android 10 o superiore, e vi parlerò di un comodo script [lcfcpy.sh] realizzato da me per eseguire scrcpy e comandi adb preimpostati. 
 
 #### Riferimenti:
 
@@ -80,5 +80,6 @@ Nel prossimo tutorial, vi mostrerò come abilitare la modalità desktop sugli sm
 
 - [adb tools]
 
+[lcfcpy.sh]: /tutorial/2021/04/13/Lcfcpy.sh.html
 [GitHub scrcpy]: https://github.com/Genymobile/scrcpy
 [adb tools]: https://developer.android.com/studio/command-line/adb
